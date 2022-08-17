@@ -1,0 +1,27 @@
+# Based on
+# https://evilmartians.com/chronicles/rubocoping-with-legacy-bring-your-ruby-code-up-to-standard
+
+require:
+  - rubocop-minitest
+  # Performance cops are bundled with Standard
+  - rubocop-performance
+  # Standard's config uses this custom cop, so it must be loaded
+  - standard/cop/block_single_line_braces
+
+inherit_from:
+  - .rubocop_todo.yml
+
+inherit_gem:
+  standard: config/ruby-3.0.yml
+
+AllCops:
+  TargetRubyVersion: <%= File.read(".ruby-version").strip %>
+  NewCops: enable
+  SuggestExtensions: false
+
+Minitest/MultipleAssertions:
+  Enabled: false
+
+Style/IfInsideElse:
+  Enabled: false
+
