@@ -1,17 +1,18 @@
-# Ruby/Minitest Kata Template
+# Ruby/Minitest/Rspec Coding challenges
 
-Project template for starting TDD Kata using Ruby and Minitest
 
 ## Usage
 
-Clone the repository.
+I am using this to document my coding challenges in an diy and opensource manner.
 
-    $ git clone git://github.com/jarhart/kata-template-ruby-minitest.git my_awesome_kata
+# Open a PR with the new or refactorred challenge
 
-Create a "kata" gemset and `cd` into your kata directory.
+Github CI will run the tests with rake.
 
-    $ rvm gemset create kata
-    $ cd my_awesome_kata
+
+
+
+Locally to play along ...
 
 Install bundler if necessary
 
