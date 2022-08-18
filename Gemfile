@@ -10,6 +10,7 @@ group :development do
   gem 'minitest'
   gem 'rspec'
   gem 'rubocop'
+  gem 'rubocop-performance'
 
   gem 'activesupport'
   gem 'andyw8-seeing_is_believing'
