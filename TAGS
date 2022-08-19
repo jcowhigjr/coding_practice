@@ -1,0 +1,31 @@
+
+test/test_my_kata_2.rb,60
+class ProjectTest < ActiveSupport::TestCaseProjectTest5,0
+
+test/test_my_kata.rb,60
+class ProjectTest < ActiveSupport::TestCaseProjectTest6,0
+
+test/test_helper.rb,117
+module ActiveSupportActiveSupport15,0
+  class TestCaseTestCase16,0
+  class TestCaseActiveSupport::TestCase16,0
+
+lib/my_kata.rb,482
+module TestTest1,0
+  def self.make_negative_1(num)make_negative_14,0
+  class GameGame13,0
+  class GameTest::Game13,0
+    attr_reader :answer, :boardanswer14,0
+    attr_reader :answer, :boardboard14,0
+    def initialize(str = "")initialize16,0
+    def movemove25,0
+    def move_right?move_right?50,0
+    def move_left?move_left?54,0
+    def move_rightmove_right58,0
+    def move_leftmove_left71,0
+  def self.play_game_of_zero(str = "")play_game_of_zero85,0
+
+lib/my_kata_2.rb,126
+module TestTest1,0
+  def self.move_zeros(nums = [])move_zeros2,0
+  def self.remove_element(nums, val)remove_element17,0

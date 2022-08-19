@@ -1,1 +1,2 @@
-brew 'shadowenv'
+brew "shadowenv"
+brew "lefthook"

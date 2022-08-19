@@ -1,0 +1,36 @@
+# EXAMPLE USAGE
+# Refer for explanation to following link:
+# https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md
+#
+
+pre-commit:
+  parallel: true
+  commands:
+    gems-audit:
+      tags: backend security
+      run: bundle audit update && bundle audit check
+    rake:
+      tags: backend tests
+      run: bundle exec rake
+
+fixer:
+  parallel: true
+  commands:
+    standard:
+      tags: linter
+      run: bundle exec rake standard:fix
+    bundler:
+      tags: security
+      run: bundle update && bundle install
+
+# scripts:
+#     "hello.js":
+#       runner: node
+#     "any.go":
+#       runner: go run
+#     "any.py":
+#       runner: python
+#     "any.rb":
+#       runner: ruby
+#     "any.sh":
+#       runner: bash

@@ -150,11 +150,11 @@ GEM
       thor (~> 1.0)
       tilt (~> 2.0)
       yard (~> 0.9, >= 0.9.24)
-    sorbet-runtime (0.5.10346)
+    sorbet-runtime (0.5.10352)
     standard (1.16.0)
       rubocop (= 1.35.0)
       rubocop-performance (= 1.14.3)
-    syntax_tree (3.3.0)
+    syntax_tree (3.4.0)
       prettier_print
     thor (1.2.1)
     tilt (2.0.11)

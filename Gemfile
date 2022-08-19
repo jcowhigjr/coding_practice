@@ -1,28 +1,28 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
 group :development do
-  gem 'byebug'
-  gem 'guard'
-  gem 'guard-bundler'
-  gem 'guard-minitest'
-  gem 'guard-rspec'
-  gem 'guard-rubocop'
-  gem 'minitest'
-  gem 'rspec'
-  gem 'rubocop'
-  gem 'rubocop-performance'
+  gem "byebug"
+  gem "guard"
+  gem "guard-bundler"
+  gem "guard-minitest"
+  gem "guard-rspec"
+  gem "guard-rubocop"
+  gem "minitest"
+  gem "rspec"
+  gem "rubocop"
+  gem "rubocop-performance"
 
-  gem 'activesupport'
-  gem 'andyw8-seeing_is_believing'
-  gem 'm'
-  gem 'minitest-reporters'
-  gem 'mocha'
-  gem 'pry-byebug'
-  gem 'rake'
-  gem 'rubocop-minitest'
-  gem 'ruby-lsp'
-  gem 'solargraph'
-  gem 'standard'
+  gem "activesupport"
+  gem "andyw8-seeing_is_believing"
+  gem "m"
+  gem "minitest-reporters"
+  gem "mocha"
+  gem "pry-byebug"
+  gem "rake"
+  gem "rubocop-minitest"
+  gem "ruby-lsp"
+  gem "solargraph"
+  gem "standard"
 
   # OS X: Uncomment one of the following for visual notifications
   # gem 'growl'
