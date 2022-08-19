@@ -14,6 +14,10 @@ module Test
     nums
   end
 
+  def self.move_zeros_select(nums = [])
+    nums.select { |n| n != 0 } + nums.select { |n| n == 0 } # select_with_index is a method from Enumerable module
+  end
+
   def self.remove_element(nums, val)
     # slow pointer
 
