@@ -1,14 +1,14 @@
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'minitest/unit'
-require 'rspec'
+require "rspec"
 
-require 'active_support'
-require 'active_support/test_case'
-require 'pry-byebug'
-require 'minitest/autorun'
-require 'minitest/reporters'
-require 'mocha/minitest'
+require "active_support"
+require "active_support/test_case"
+require "pry-byebug"
+require "minitest/autorun"
+require "minitest/unit"
+require "minitest/reporters"
+require "mocha/minitest"
 
 Minitest::Reporters.use!([Minitest::Reporters::DefaultReporter.new(color: true)])
 

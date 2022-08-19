@@ -1,10 +1,10 @@
 module Test
   # def initialize; end
 
-  # def self.make_negative_1(num)
-  #   #   Enter Code Here
-  #   -num.abs
-  # end
+  def self.make_negative(num)
+    #   Enter Code Here
+    -num.abs
+  end
 
   # Game of Zero is a game
   # count the number of moves
@@ -13,12 +13,12 @@ module Test
   class Game
     attr_reader :answer, :board
 
-    def initialize(str = '')
+    def initialize(str = "")
       # raise StandardError, 'board empty' if board.empty?
-      @board = str.split(',').map(&:to_i)
+      @board = str.split(",").map(&:to_i)
       @position = 0
       @moves = 0
-      @direction = 'move_right'
+      @direction = "move_right"
       @current_value = @board[@position]
     end
 
@@ -27,16 +27,15 @@ module Test
 
       return unless move_right? || move_left?
 
-
-      @direction = 'stop' if @current_value == 0
-      @direction = 'stop' if @current_value == -1
+      @direction = "stop" if @current_value == 0
+      @direction = "stop" if @current_value == -1
 
       case @direction
-      when 'move_right'
-          move_right if move_right?
-      when 'move_left'
-          move_left if move_left?
-      when 'stop'
+      when "move_right"
+        move_right if move_right?
+      when "move_left"
+        move_left if move_left?
+      when "stop"
         @stop_position = @position
         @answer = @moves if @current_value == 0
         @answer = -1 if @current_value == -1
@@ -45,7 +44,6 @@ module Test
       end
       # puts 'after: ' + inspect
     end
-
 
     private
 
@@ -64,12 +62,11 @@ module Test
         @position = index
         @moves += 1
         @current_value = @board[index]
-        @direction = 'move_left'
-        @direction = 'stop' if @current_value == 0
-        @direction = 'stop' if @current_value == -1
+        @direction = "move_left"
+        @direction = "stop" if @current_value == 0
+        @direction = "stop" if @current_value == -1
       end
     end
-
 
     def move_left
       index = @position - @current_value
@@ -78,17 +75,16 @@ module Test
         @position = index
         @moves += 1
         @current_value = @board[index]
-        @direction = 'move_right'
-        @direction = 'stop' if @current_value == 0
-        @direction = 'stop' if @current_value == -1
+        @direction = "move_right"
+        @direction = "stop" if @current_value == 0
+        @direction = "stop" if @current_value == -1
       end
     end
   end
 
-  def self.play_game_of_zero(str = '')
+  def self.play_game_of_zero(str = "")
     @game = Test::Game.new(str)
     @game.move until @game.answer
     @game.answer
   end
-
 end
