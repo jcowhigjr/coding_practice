@@ -22,10 +22,10 @@ module Test
         total_packages += 1
         available_small_packages -= 1
       else # leftover items
-        puts "items remaining: #{items_remaining}"
-        puts "available large packages: #{available_large_packages}"
-        puts "available small packages: #{available_small_packages}"
-        puts "total packages: #{total_packages}"
+        # puts "items remaining: #{items_remaining}"
+        # puts "available large packages: #{available_large_packages}"
+        # puts "available small packages: #{available_small_packages}"
+        # puts "total packages: #{total_packages}"
         return -1
       end
     end
