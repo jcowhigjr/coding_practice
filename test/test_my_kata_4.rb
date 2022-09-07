@@ -17,6 +17,9 @@ class ProjectTest < ActiveSupport::TestCase
 
   # tickets([25, 100]) // => NO
 
+  # correct_change?(till: { 25 => 0, 50 => 1, 100 => 0}, price: 25, bill: 50,  change: 25) // => false
+  # tickets([25, 50, 50]) // => NO
+
   test "Sale instance takes an ordered array of bills" do
     assert_raises(StandardError) { Sale.new }
     assert Sale.new([25, 25, 50])
@@ -78,8 +81,9 @@ class ProjectTest < ActiveSupport::TestCase
     refute @sale.send(:sale_service)
   end
 
-  test "sale_service with 3 sellers NO" do
-    @sale = Sale.new([25, 25, 100])
+  test "sale_service with 3 buyers but incorrect change NO" do
+    @sale = Sale.new([25, 50, 50])
+    skip "till not implemented"
     refute @sale.send(:sale_service)
   end
 
