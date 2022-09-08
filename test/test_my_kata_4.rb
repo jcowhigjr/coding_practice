@@ -2,9 +2,49 @@ require_relative "test_helper"
 require "minitest/autorun"
 require "my_kata_4"
 
-class ProjectTest < ActiveSupport::TestCase
+class MoneyTest < ActiveSupport::TestCase
   include Test
+  # Money takes a denomination and returns a value
+  test "money takes a denomination and returns a value" do
+    assert_equal 25, Bill.new(denomination: "twenty_five").value
+    assert_equal 50, Bill.new(denomination: "fifty").value
+    assert_equal 100, Bill.new(denomination: "one_hundred").value
+  end
+end
 
+class TillTest < ActiveSupport::TestCase
+  include Test
+  # Money takes a denomination and returns a value
+  test "money takes a denomination and returns a value" do
+    assert_equal 25, Till.new(denomination: "twenty_five").value
+    assert_equal 50, Till.new(denomination: "fifty").value
+    assert_equal 100, Till.new(denomination: "one_hundred").value
+  end
+
+  test "till can increment quantity" do
+    @twenty_fives = Till.new(denomination: "twenty_five")
+    assert_equal 25, @twenty_fives.value
+    assert_equal 1, @twenty_fives.quantity
+    @twenty_fives.increment
+    assert_equal 2, @twenty_fives.quantity
+    assert_equal 50, @twenty_fives.value
+  end
+
+  test "till can decrement quantity" do
+    @twenty_fives = Till.new(denomination: "twenty_five")
+    assert_equal 25, @twenty_fives.value
+    assert_equal 1, @twenty_fives.quantity
+    @twenty_fives.decrement
+    assert_equal 0, @twenty_fives.quantity
+    assert_equal 0, @twenty_fives.value
+    @twenty_fives.decrement
+    assert_equal 0, @twenty_fives.quantity
+    assert_equal 0, @twenty_fives.value
+  end
+end
+
+class SaleTest < ActiveSupport::TestCase
+  include Test
   # Vasya is currently working as a clerk. He wants to sell a ticket to every single person in this line. Each of them has a single 100, 50 or 25 dollars bill. A ticket costs 25 dollars.
 
   # Can Vasya sell a ticket to each person and give the change if he initially has no money and sells the tickets strictly in the order people follow in the line?
@@ -83,7 +123,7 @@ class ProjectTest < ActiveSupport::TestCase
 
   test "sale_service with 3 buyers but incorrect change NO" do
     @sale = Sale.new([25, 50, 50])
-    skip "till not implemented"
+    # skip "till not implemented"
     refute @sale.send(:sale_service)
   end
 
