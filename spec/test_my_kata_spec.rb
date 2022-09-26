@@ -1,11 +1,9 @@
-# require_relative 'test_helper'
+# require_relative "../test/test_helper"
 require "rspec"
-require "my_kata"
-# require
+# require "lib/my_kata"
 
-describe "Test" do
-  it "Fixed tests" do
-    include Test
-    assert_equals(Test.make_negative(42), -42)
+describe "MyKata" do
+  it "should return true" do
+    skip "Not implemented yet"
   end
 end
