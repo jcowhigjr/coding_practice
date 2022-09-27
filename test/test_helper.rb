@@ -1,10 +1,13 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), "..", "lib"))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
+
+Bundler.require(:default, :test)
+
 require "rspec"
 
 require "active_support"
 require "active_support/test_case"
-require "pry-byebug"
+require "debug"
 require "minitest/autorun"
 require "minitest/unit"
 require "minitest/reporters"

@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 group :development do
-  gem "byebug"
   gem "guard"
   gem "guard-bundler"
   gem "guard-minitest"
@@ -17,13 +16,16 @@ group :development do
   gem "m"
   gem "minitest-reporters"
   gem "mocha"
-  gem "pry-byebug"
   gem "rake"
   gem "rubocop-minitest"
   gem "ruby-lsp"
   gem "solargraph"
   gem "standard"
 
+  gem "webmock"
+  gem "vcr"
+  gem "json-api-client"
+  gem "debug"
   # OS X: Uncomment one of the following for visual notifications
   # gem 'growl'
   # gem 'growl_notify'
