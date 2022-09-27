@@ -175,7 +175,7 @@ http_interactions:
       Vary:
       - Origin,Accept-Encoding
       Via:
-      - 1.1 spaces-router (991a05428f42), 1.1 6c50fdb4a3331a94bc43c7d77415865a.cloudfront.net
+      - 1.1 spaces-router (991a05428f42), 1.1 66ba4d5c7489ca01dc96f9bc4ed4d568.cloudfront.net
         (CloudFront)
       X-Content-Type-Options:
       - nosniff
@@ -186,19 +186,19 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Request-Id:
-      - 1f2ac54b-94b9-70a1-2798-764f73f0ca54
+      - 28c572cc-3ba0-c572-9f69-d349eb9e9462
       X-Runtime:
-      - '0.035966'
+      - '0.043146'
       X-Xss-Protection:
       - 1; mode=block
       Date:
-      - Mon, 26 Sep 2022 20:19:01 GMT
+      - Mon, 26 Sep 2022 22:01:30 GMT
       X-Cache:
       - Miss from cloudfront
       X-Amz-Cf-Pop:
       - ATL56-C4
       X-Amz-Cf-Id:
-      - 1p7JMi1zfJ5c6ssoBCFz9UMrdjyE8vs7DpWB14JwUERjBHW2ZVAKGQ==
+      - DAYlCLQJIpR5WbkTSHG8v-v88UqfSs62muGygzO7jbEdp-mTsqumyA==
     body:
       encoding: ASCII-8BIT
       string: '{"data_structure":"country_subdivisions","href":"https://api.carerev.com/api/v1/country_subdivisions?country_id=4040f18e-84e2-4322-b41f-b2160c594406","country_subdivisions":[{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/343cfaeb-24f3-41ed-916f-25e586166c65","id":"343cfaeb-24f3-41ed-916f-25e586166c65","code":"US-AL","code_iso":"US-AL","code_ansi":"AL","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Alabama"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/e36cb311-d547-4aea-9b55-392ece205267","id":"e36cb311-d547-4aea-9b55-392ece205267","code":"US-AK","code_iso":"US-AK","code_ansi":"AK","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Alaska"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/f2d96759-e9eb-4dbb-8326-cea98cbd3ba5","id":"f2d96759-e9eb-4dbb-8326-cea98cbd3ba5","code":"US-AZ","code_iso":"US-AZ","code_ansi":"AZ","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Arizona"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/33a81487-669b-4777-bb64-8f322507ddc5","id":"33a81487-669b-4777-bb64-8f322507ddc5","code":"US-AR","code_iso":"US-AR","code_ansi":"AR","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Arkansas"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/0e0a1957-0e61-4f2a-9cc7-69327bcc5565","id":"0e0a1957-0e61-4f2a-9cc7-69327bcc5565","code":"US-CA","code_iso":"US-CA","code_ansi":"CA","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"California"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/3d3bf4da-588e-47b5-bf7f-77a371dbc8aa","id":"3d3bf4da-588e-47b5-bf7f-77a371dbc8aa","code":"US-CO","code_iso":"US-CO","code_ansi":"CO","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Colorado"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/43ba82dc-f69a-480c-9416-539f9038afa1","id":"43ba82dc-f69a-480c-9416-539f9038afa1","code":"US-CT","code_iso":"US-CT","code_ansi":"CT","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Connecticut"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/673a11ad-6e30-4148-8eb1-66f62cba2779","id":"673a11ad-6e30-4148-8eb1-66f62cba2779","code":"US-DE","code_iso":"US-DE","code_ansi":"DE","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Delaware"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/f0c9a1f7-d7cc-4ab9-b46f-211279cff69a","id":"f0c9a1f7-d7cc-4ab9-b46f-211279cff69a","code":"US-DC","code_iso":"US-DC","code_ansi":"DC","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"District
@@ -213,5 +213,5 @@ http_interactions:
         Carolina"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/5c800414-cd82-4f0e-b0ca-079df217bfbc","id":"5c800414-cd82-4f0e-b0ca-079df217bfbc","code":"US-SD","code_iso":"US-SD","code_ansi":"SD","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"South
         Dakota"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/ba6928c0-4e30-40ad-a6af-f733524e425e","id":"ba6928c0-4e30-40ad-a6af-f733524e425e","code":"US-TN","code_iso":"US-TN","code_ansi":"TN","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Tennessee"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/17d9d410-7093-41b9-af7d-f187c26b6262","id":"17d9d410-7093-41b9-af7d-f187c26b6262","code":"US-TX","code_iso":"US-TX","code_ansi":"TX","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Texas"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/abf50c9b-5d72-4065-b020-7d518aaab210","id":"abf50c9b-5d72-4065-b020-7d518aaab210","code":"US-UT","code_iso":"US-UT","code_ansi":"UT","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Utah"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/c388861c-c09e-40d4-9116-ee6794045bee","id":"c388861c-c09e-40d4-9116-ee6794045bee","code":"US-VT","code_iso":"US-VT","code_ansi":"VT","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Vermont"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/1fdc1ef7-fb1c-401f-88a7-8f9dfed45d08","id":"1fdc1ef7-fb1c-401f-88a7-8f9dfed45d08","code":"US-VA","code_iso":"US-VA","code_ansi":"VA","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Virginia"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/53b5638f-d31f-4c2a-9705-f6a89ce38c28","id":"53b5638f-d31f-4c2a-9705-f6a89ce38c28","code":"US-WA","code_iso":"US-WA","code_ansi":"WA","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Washington"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/2bf9f6c8-dcb1-4f47-aa85-99ce70bf2b09","id":"2bf9f6c8-dcb1-4f47-aa85-99ce70bf2b09","code":"US-WV","code_iso":"US-WV","code_ansi":"WV","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"West
         Virginia"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/5881be19-e0ef-4c56-98d4-0b090e1b9386","id":"5881be19-e0ef-4c56-98d4-0b090e1b9386","code":"US-WI","code_iso":"US-WI","code_ansi":"WI","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Wisconsin"},{"data_type":"country_subdivision","href":"https://api.carerev.com/api/v1/country_subdivisions/87f9c9bf-82ba-4fc8-8792-e09b455fc5da","id":"87f9c9bf-82ba-4fc8-8792-e09b455fc5da","code":"US-WY","code_iso":"US-WY","code_ansi":"WY","country_id":"4040f18e-84e2-4322-b41f-b2160c594406","name":"Wyoming"}]}'
-  recorded_at: Mon, 26 Sep 2022 20:19:01 GMT
+  recorded_at: Mon, 26 Sep 2022 22:01:30 GMT
 recorded_with: VCR 6.1.0
